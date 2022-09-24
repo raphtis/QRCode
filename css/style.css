@@ -49,7 +49,8 @@ p {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 500px;
 }
 
@@ -84,7 +85,6 @@ form:focus {
 }
 
 img {
-  padding-top: 15px;
   width: 150px;
 }
 
@@ -97,7 +97,6 @@ button {
 
 #generated {
   margin: auto;
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
