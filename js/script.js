@@ -6,6 +6,7 @@ const qr = document.getElementById('qrcode');
 const onGenerateSubmit = (e) => {
   e.preventDefault();
 
+  clearUI();
   const url = document.getElementById('url').value;
   const size = document.getElementById('qr-size').value;
   console.log(url,size);
