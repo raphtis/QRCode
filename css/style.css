@@ -80,9 +80,12 @@ form:focus {
 }
 
 .form-div input, .form-div select {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 5px;
+  text-decoration: none;
+  color: #36454F;
 }
+
 
 img {
   width: 150px;
@@ -97,6 +100,8 @@ button {
   font-size: 1.5rem;
   border-radius: 5px;
   background-color: #e9c46a;
+  text-decoration: none;
+  color: #36454F;
 }
 
 #generated {
@@ -119,6 +124,7 @@ button {
   height: 28px;
   font-size: 1.5rem;
   width: 150px;
+  padding-bottom: 5px;
 }
 
 .save-btn:hover {
