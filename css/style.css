@@ -88,6 +88,10 @@ img {
   width: 150px;
 }
 
+.qr-icon {
+  margin-top: 20px;
+}
+
 button {
   height: auto;
   font-size: 1.5rem;
