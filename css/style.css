@@ -1,0 +1,126 @@
+/* ============= IMPORTED FONTS ============ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+header {
+  background-color: rgb(235, 235, 215);
+  opacity: 50%;
+  color: #36454F;
+  padding: 4px;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  max-width: 500px;
+
+
+}
+
+body {
+  background-color: #36454F;
+  color: rgb(235, 235, 215);
+}
+
+h1 {
+  margin: 5px;
+  text-align: center;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.header-div {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: auto;
+  max-width: 500px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-copy {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+form {
+  display: grid;
+  margin-top: 5px;
+  outline: none;
+}
+
+form:focus {
+  outline: none;
+}
+
+.form-div {
+  margin: 20px;
+}
+
+.form-div input, .form-div select {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+img {
+  padding-top: 15px;
+  width: 150px;
+}
+
+button {
+  height: auto;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  background-color: #e9c46a;
+}
+
+#generated {
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.save-btn {
+  background-color: #e76f51;
+  border-radius: 5px;
+  margin: auto; 
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  color: rgb(235, 235, 215);
+  height: 28px;
+  font-size: 1.5rem;
+  width: 150px;
+}
+
+.save-btn:hover {
+  cursor: pointer;
+  text-decoration: none;
+  
+
+}
