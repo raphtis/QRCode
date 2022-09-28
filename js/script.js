@@ -1,7 +1,6 @@
 const form = document.getElementById('generate-form');
 const qr = document.getElementById('qrcode');
 
-
 // FORM TO GENERATE QR CODE
 const onGenerateSubmit = (e) => {
   e.preventDefault();
@@ -54,6 +53,10 @@ const clearUI = () => {
   const saveLink = document.getElementById('save-link');
   if(saveLink) saveLink.remove();
 };
+
+const clearInput = () => {
+  url.innerHTML = '';
+}
 
 
 // SAVE QR CODE
