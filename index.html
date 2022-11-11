@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>QR Code Generator</title>
+    <title>URL QR Code Generator</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js" async defer></script>
@@ -16,10 +17,13 @@
     </style>
   </head>
   <body>
+    <div class="toggle-container">
+      <img class="dark-mode-btn" onclick="toggleDarkMode()" src="/img/day-and-night.png" />
+    </div>
     <header>
       <div class="header-container">
         <div class="header-div">
-          <h1>QR Code Generator</h1>
+          <h1>URL QR Code Generator</h1>
         </div>
       </div>
     </header>
@@ -41,7 +45,7 @@
               id="url"
               type="url"
               pattern="https?://.+"
-              placeholder="Include http://"
+              placeholder="Must Include http://"
               value="http://"
             />
 
@@ -55,7 +59,7 @@
               <option value="700">700x700</option>
             </select>
 
-            <button class="qr button">
+            <button class="qr-btn">
               Generate QR Code
             </button>
           </form>

@@ -11,7 +11,7 @@ const onGenerateSubmit = (e) => {
   console.log(url,size);
 
   if (url === '') {
-    alert('Please enter a URL')
+    alert('Please enter a complete URL')
   } else {
     showSpinner();
 
@@ -66,9 +66,15 @@ const saveBtn = (saveUrl) => {
   link.href = saveUrl;
   link.className = 'save-btn';
   link.download = 'qrcode';
-  link.innerHTML = 'Save Code';
+  link.innerHTML = 'Save QR';
   document.getElementById('generated').appendChild(link);
 } 
 
 hideSpinner();
 form.addEventListener('submit', onGenerateSubmit);
+
+// TOGGLE DARKMODE
+const toggleDarkMode = () => {
+  darkMode = document.body;
+  darkMode.classList.toggle('dark-mode' )
+}

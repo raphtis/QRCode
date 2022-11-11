@@ -9,22 +9,19 @@
 }
 
 header {
-  background-color: rgb(235, 235, 215);
+  border-bottom: 1px solid #36454F;
   opacity: 50%;
-  color: #36454F;
+  color: #29343c;
   padding: 4px;
   margin: auto;
   margin-top: 10px;
   font-size: 16px;
-  border-radius: 10px;
   max-width: 500px;
-
-
 }
 
 body {
-  background-color: #36454F;
-  color: rgb(235, 235, 215);
+  color: #36454F;
+  background-color: #fff;
 }
 
 h1 {
@@ -76,19 +73,21 @@ form:focus {
 }
 
 .form-div {
-  margin: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .form-div input, .form-div select {
-  font-size: 1rem;
-  margin-bottom: 5px;
+  font-size: 1.25rem;
+  margin-bottom: .75rem;
   text-decoration: none;
   color: #36454F;
+  padding-left: 5px;
 }
 
 
 img {
-  width: 150px;
+  width: 125px;
 }
 
 .qr-icon {
@@ -97,11 +96,16 @@ img {
 
 button {
   height: auto;
-  font-size: 1.5rem;
   border-radius: 5px;
-  background-color: #e9c46a;
+  border: none;
   text-decoration: none;
   color: #36454F;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #7FB069;
+  color:  rgb(235, 235, 215);
 }
 
 #generated {
@@ -114,22 +118,62 @@ button {
 }
 
 .save-btn {
-  background-color: #e76f51;
+  background-color: #e9c46a;
   border-radius: 5px;
   margin: auto; 
   margin-top: 20px;
   margin-bottom: 50px;
   text-decoration: none;
-  color: rgb(235, 235, 215);
+  color: #36454F;
   height: 28px;
   font-size: 1.5rem;
   width: 150px;
   padding-bottom: 5px;
+  cursor: pointer;
 }
 
 .save-btn:hover {
-  cursor: pointer;
   text-decoration: none;
-  
-
+  background-color: #7FB069;
+  color:  rgb(235, 235, 215);
 }
+
+.qr-btn {
+  background-color: #e9c46a;
+  font-size: 1.5rem;
+}
+.qr-btn:hover {
+  background-color: #7FB069;
+  color:  rgb(235, 235, 215);
+}
+
+/* DARKMODE */
+.toggle-container {
+  margin-top: 20px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: end;
+}
+
+.dark-mode {
+  background-color: #2C3639;
+  color: #fff;
+}
+
+.dark-mode header {
+  color: #DCD7C9;
+  border-bottom: 1px solid #DCD7C9;
+}
+
+.dark-mode .qr-btn:hover, .dark-mode .save-btn:hover {
+  background-color: #b06969;
+}
+
+.dark-mode-btn {
+  width: 3rem;
+  cursor: pointer;
+  background-color: #969595;
+  border-radius: 50%;
+  border: 2px solid #e9c46a;
+}
+
